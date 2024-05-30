@@ -1,0 +1,283 @@
+/* ======== basic  ======== */
+
+:root {
+  --orange: rgb(243, 82, 19);
+  --sidebar: 22vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+img {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 12px;
+  min-width: 110px;
+  background-color: #fff;
+}
+
+/* ========= sidebar ========= */
+.sidebar {
+  width: var(--sidebar);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--orange);
+  padding: 80px 30px;
+}
+
+.company-logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  max-width: 100px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+/* ========= content ========= */
+.content {
+  margin-left: var(--sidebar);
+  padding: 0 4vw;
+}
+
+.content-part {
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+.intro .intro-title {
+  color: var(--orange);
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.intro .separator {
+  width: 60px;
+  height: 9px;
+  background-color: var(--orange);
+  border-radius: 8px;
+}
+
+.text-wrapper p {
+  margin-bottom: 15px;
+}
+
+.text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+#home {
+  padding-top: 80px;
+
+}
+
+.head-line {
+  font-size: 60px;
+
+}
+
+/* ======== showcase part ======== */
+.showcase-img-grd {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px 15px;
+}
+
+.showcase-img-grd img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ======== designers part ======== */
+.design-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.team-card {
+  background-color: #f1f1f1;
+}
+
+.team-card img {
+  width: 100%;
+}
+
+.team-card .card-details {
+  padding: 20px;
+}
+
+.team-card .member-name {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.team-card .member-role {
+  color: #656464;
+  margin: 12px 0;
+}
+
+/* ======== packages part ======== */
+.all-packages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.package-card {
+  background-color: #f1f1f1;
+}
+
+.package-name {
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  background-color: #666;
+}
+
+.pro .package-name {
+  background-color: var(--orange);
+}
+
+.package-features li,
+.package-price,
+.sign-up,
+.thankyou-text {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.package-features li {
+  list-style: none;
+}
+
+.package-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.package-price .currency,
+.package-price button {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.room-no,
+.thankyou-text {
+  color: #6c6b6b;
+}
+
+.sign-up-btn {
+  background-color: #fff;
+}
+
+.pro .sign-up-btn {
+  color: #fff;
+  background-color: var(--orange);
+}
+
+/* ======== contact part ======== */
+#contact {
+  padding-bottom: 90px;
+}
+
+.form-wrapper {
+  margin-top: 30px;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  height: 44px;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.submit-btn {
+  color: #fff;
+  width: 100%;
+  height: 44px;
+  background-color: var(--orange);
+}
+
+/* ======== footer ======== */
+footer {
+  text-align: center;
+  padding: 50px 4vw;
+  background-color: #f1f1f1;
+}
